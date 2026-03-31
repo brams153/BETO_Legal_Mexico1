@@ -1,0 +1,174 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Configuración de márgenes
+\geometry{top=2cm, bottom=2cm, left=1.5cm, right=1.5cm}
+
+% Definición de casillas de verificación
+\newcommand{\casilla}{\text{\Large$\square$}}
+\newcommand{\casillaX}{\text{\Large$\boxtimes$}} % Usar para marcar con X
+
+% =========================================================================
+% DATOS DEL INFORME (Modifica estos campos para rellenar el documento)
+% =========================================================================
+\newcommand{\NoReferencia}{IPH-2026-XXXX}
+\newcommand{\NoFolio}{FOLIO-12345}
+\newcommand{\NoExpediente}{EXP-98765/2026}
+\newcommand{\FechaPuesta}{20/05/2026}
+\newcommand{\HoraPuesta}{11:43}
+
+% Datos del Primer Respondiente
+\newcommand{\ApellPRes}{Mireles}
+\newcommand{\ApellSRes}{Alcántara}
+\newcommand{\NomRes}{Abraham Apolinar}
+\newcommand{\AdscripcionRes}{FCPyS - UNAM}
+\newcommand{\CargoRes}{Oficial de Control}
+
+% =========================================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{SISTEMA NACIONAL DE SEGURIDAD PÚBLICA}}
+\fancyhead[R]{IPH-2019 | HECHO PROBABLEMENTE DELICTIVO}
+\fancyfoot[C]{Página \thepage}
+
+\titleformat{\section}{\normalfont\large\bfseries\fillwithlines{1em}}{}{0pt}{}[\titlerule]
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{INFORME POLICIAL HOMOLOGADO}} \\
+    \vspace{0.2cm}
+    {\large \textbf{SECCIÓN 1. PUESTA A DISPOSICIÓN}}
+\end{center}
+
+\vspace{0.4cm}
+
+% Tabla de Control Superior
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{NO. DE REFERENCIA:} & \textbf{NO. DE FOLIO (SISTEMA):} & \textbf{NO. EXPEDIENTE:} \\
+\NoReferencia & \NoFolio & \NoExpediente \\
+\hline
+\end{tabularx}
+
+\vspace{0.6cm}
+
+\subsubsection*{Apartado 1.1 Fecha y hora de la puesta a disposición}
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\textbf{Fecha (DDMMAAAA):} \FechaPuesta & \textbf{Hora (HH:MM):} \HoraPuesta \\
+\hline
+\end{tabularx}
+
+\vspace{0.6cm}
+
+\subsubsection*{Anexos Entregados (Señale con una "X" e indique la cantidad)}
+\begin{tabularx}{\textwidth}{|l|X|l|l|X|}
+\hline
+\casilla & Anexo A. Detención(es) & & \casilla & Anexo E. Entrevistas \\ \hline
+\casilla & Anexo B. Informe del uso de la fuerza & & \casilla & Anexo F. Entrega-recepción del lugar \\ \hline
+\casilla & Anexo C. Inspección de vehículo & & \casilla & Anexo G. Continuación de la narrativa \\ \hline
+\casilla & Anexo D. Inventario de armas y objetos & & \casilla & No se entregan Anexos \\ 
+\hline
+\end{tabularx}
+
+\vspace{0.6cm}
+
+% Sección de firmas de puesta a disposición
+\begin{tabularx}{\textwidth}{|X|X|}
+\hline
+\multicolumn{2}{|c|}{\textbf{DATOS DE QUIEN REALIZA LA PUESTA A DISPOSICIÓN (PRIMER RESPONDIENTE)}} \\
+\hline
+\textbf{Primer Apellido:} \ApellPRes & \textbf{Segundo Apellido:} \ApellSRes \\
+\hline
+\textbf{Nombre(s):} \NomRes & \textbf{Adscripción:} \AdscripcionRes \\
+\hline
+\textbf{Cargo/Grado:} \CargoRes & \textbf{Firma:} \\[0.8cm]
+\hline
+\end{tabularx}
+
+\vspace{0.8cm}
+\pagebreak
+
+% =========================================================================
+% SECCIÓN 2. PRIMER RESPONDIENTE Y UBICACIÓN
+% =========================================================================
+\section*{SECCIÓN 2 Y 3. CONOCIMIENTO DEL HECHO Y UBICACIÓN}
+
+\subsubsection*{Apartado 3.1 Conocimiento del hecho por el primer respondiente}
+¿Cómo se enteró del hecho? \\
+\begin{tabularx}{\textwidth}{XXXX}
+\casilla~Denuncia & \casilla~Flagrancia & \casilla~Localización & \casilla~Descubrimiento \\
+\casilla~Mandamiento judicial & \casilla~Llamada de emergencia & \casilla~Aportación & No. 911: \underline{\hspace{3cm}}
+\end{tabularx}
+
+\vspace{0.6cm}
+
+\subsubsection*{Apartado 4.1 Ubicación geográfica del lugar de la intervención}
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\multicolumn{3}{|l|}{\textbf{Calle / Tramo carretero:}} \\ \hline
+\textbf{No. Exterior:} & \textbf{No. Interior:} & \textbf{Código Postal:} \\ \hline
+\multicolumn{2}{|l|}{\textbf{Colonia / Localidad:}} & \textbf{Municipio / Demarcación:} \\ \hline
+\multicolumn{3}{|l|}{\textbf{Entidad federativa:}} \\ \hline
+\textbf{Latitud:} & \textbf{Longitud:} & \textbf{Referencias:} \\ \hline
+\end{tabularx}
+
+\vspace{0.8cm}
+
+% =========================================================================
+% SECCIÓN 5. NARRATIVA DE LOS HECHOS
+% =========================================================================
+\section*{SECCIÓN 5. NARRATIVA DE LOS HECHOS}
+\textit{Relate cronológicamente las acciones realizadas durante su intervención desde el conocimiento del hecho hasta la puesta a disposición. Responda de manera descriptiva a las preguntas: ¿Quién?, ¿Qué?, ¿Cómo?, ¿Cuándo? y ¿Dónde?.}
+
+\vspace{0.4cm}
+\begin{tabularx}{\textwidth}{|X|}
+\hline
+\textbf{Descripción de los hechos y actuación de la autoridad:} \\[10cm]
+\hline
+\end{tabularx}
+
+\vspace{0.8cm}
+\pagebreak
+
+% =========================================================================
+% ANEXO A. DETENCIONES (EJEMPLO DE ESTRUCTURA DE ANEXO)
+% =========================================================================
+\section*{ANEXO A. DETENCIÓN(ES)}
+\subsubsection*{Apartado A.2 Datos generales de la persona detenida}
+
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{Primer Apellido:} & \textbf{Segundo Apellido:} & \textbf{Nombre(s):} \\ \hline
+\textbf{Apodo o alias:} & \textbf{Nacionalidad:} \casilla~Mexicana ~ \casilla~Extranjera & \textbf{Sexo:} \casilla~F ~ \casilla~M \\ \hline
+\textbf{Fecha de Nacimiento:} & \textbf{Edad:} & \textbf{Identificación:} \casilla~INE \casilla~Pasaporte \\ \hline
+\end{tabularx}
+
+\vspace{0.6cm}
+\subsubsection*{Apartado A.4 Constancia de lectura de derechos}
+\begin{enumerate}
+    \item Usted tiene derecho a conocer el motivo de su detención.
+    \item Usted tiene derecho a guardar silencio.
+    \item Usted tiene derecho a declarar, asistido por un defensor ante la autoridad competente.
+    \item Usted tiene derecho a un defensor público si no puede o no quiere designar uno privado.
+    \item Usted tiene derecho a que un familiar o persona de confianza conozca los hechos de su detención.
+\end{enumerate}
+
+\vspace{0.5cm}
+\begin{center}
+\begin{tabular}{p{7cm}}
+\hline
+\centering \textbf{Firma o Huella de la persona detenida}
+\end{tabular}
+\end{center}
+
+\end{document}

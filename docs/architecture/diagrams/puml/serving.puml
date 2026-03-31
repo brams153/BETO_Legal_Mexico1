@@ -1,0 +1,28 @@
+@startuml SERVING
+title BETO_Legal - Serving Layer
+
+package "API Layer" {
+  [FastAPI]
+}
+
+package "Inference" {
+  [predict]
+  [embed]
+  [pipeline]
+}
+
+package "Ops" {
+  [celery]
+  [model_manager]
+  [xai_service]
+}
+
+[FastAPI] --> [pipeline]
+[pipeline] --> [predict]
+[pipeline] --> [embed]
+
+[FastAPI] --> [celery]
+[FastAPI] --> [model_manager]
+[FastAPI] --> [xai_service]
+
+@enduml

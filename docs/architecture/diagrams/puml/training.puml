@@ -1,0 +1,27 @@
+@startuml TRAINING
+title BETO_Legal - Training Pipeline
+
+database "Gold Dataset" as gold
+
+package "Training" {
+  [train_classifier] as tc
+  [train_ner] as tn
+  [continue_pretraining] as cp
+  [optuna_search] as os
+}
+
+package "Evaluation" {
+  [metrics] as m
+  [benchmark] as b
+  [error_analysis] as ea
+}
+
+gold --> tc
+gold --> tn
+
+tc --> m
+tn --> m
+
+m --> b
+b --> ea
+@enduml

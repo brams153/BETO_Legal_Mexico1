@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Beto"
+version = "0.1.0"
+description = "Package from Beto Legal"
+dependencies = [
+    "beautifulsoup4==4.14.3",
+    "pandas==3.0.3",
+    "pdf2image==1.17.0",
+    "pikepdf==10.6.0",
+    "pillow==12.2.0",
+    "pymupdf==1.27.2.3",
+    "pytesseract==0.3.13",
+    "requests==2.34.2",
+    "urllib3==2.7.0",
+]
+[tool.setuptools.packages.find]
+where = ["src"]
