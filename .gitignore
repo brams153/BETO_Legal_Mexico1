@@ -1,0 +1,19 @@
+# --- METADATA DE EMPAQUETADO ---
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- CACHÉ DE PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- ENTORNOS VIRTUALES ---
+.venv/
+venv/
+env/
+
+# --- CONFIGURACIONES DE EDITORES ---
+.vscode/
+.idea/

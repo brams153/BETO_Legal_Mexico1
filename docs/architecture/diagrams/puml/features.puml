@@ -1,0 +1,24 @@
+@startuml FEATURES
+title BETO_Legal - Feature Engineering
+
+database "Silver Data" as silver
+
+package "Transforms" {
+  [Chunking] as chunk
+  [Tokenization] as tok
+  [Augmentation] as aug
+}
+
+package "Task Features" {
+  [NER Features] as ner
+  [Classification Features] as clf
+  [Retrieval Features] as ret
+  [Summarization Features] as sum
+}
+
+silver --> chunk
+chunk --> tok
+tok --> ner
+tok --> clf
+tok --> ret
+@enduml

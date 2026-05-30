@@ -1,0 +1,32 @@
+@startuml MLOPS
+title BETO_Legal - MLOps & Infrastructure
+
+package "Registry" {
+  [model_registry]
+  [checkpoints]
+}
+
+package "Monitoring" {
+  [Prometheus]
+  [Grafana]
+  [drift_detection]
+}
+
+package "Orchestration" {
+  [Airflow]
+}
+
+package "Infra" {
+  [Docker]
+  [Kubernetes]
+  [Terraform]
+  [MinIO]
+  [Postgres]
+}
+
+[Airflow] --> [Training]
+[model_registry] --> [Serving]
+
+[Prometheus] --> [Grafana]
+
+@enduml

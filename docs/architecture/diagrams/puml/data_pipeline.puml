@@ -1,0 +1,28 @@
+@startuml DATA_PIPELINE
+title BETO_Legal - Data Pipeline
+
+package "Sources" {
+  [SCJN API]
+  [PDFs]
+  [Diccionarios]
+}
+
+package "Ingestion" {
+  [Scrapers]
+}
+
+package "Lakehouse" {
+  database "Bronze"
+  database "Silver"
+  database "Gold"
+}
+
+[SCJN API] --> [Scrapers]
+[PDFs] --> [Scrapers]
+[Diccionarios] --> [Scrapers]
+
+[Scrapers] --> Bronze
+Bronze --> Silver
+Silver --> Gold
+
+@enduml
