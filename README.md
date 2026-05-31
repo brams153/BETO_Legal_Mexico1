@@ -1,9 +1,25 @@
 # BETO Legal México
 
 ## ⚖️ Resumen 
-**BETO Legal México** es un ecosistema avanzado de Procesamiento de Lenguaje Natural (NLP) diseñado específicamente para el análisis, clasificación y Reconocimiento de Entidades Nombradas (NER) de documentos legales y resoluciones jurídicas en México. 
 
-El sistema automatiza la ingesta masiva de corpus desde fuentes clave como la **Suprema Corte de Justicia de la Nación (SCJN)** y la **Biblioteca Jurídica de la UNAM**, procesando la información a través de una arquitectura Lakehouse estructurada en capas (Bronze, Silver, Gold) y gestionando el ciclo de vida completo de los modelos mediante un sólido stack de **MLOps**.
+**BETO Legal México** es un modelo  de Procesamiento de Lenguaje Natural (NLP) diseñado específicamente para el análisis, clasificación y Reconocimiento de Entidades Nombradas (NER) en documentos legales y resoluciones jurídicas mexicanas.
+### Origen y Fundamentos Técnicos
+Este modelo es una evolución del aporte desarrollado por el **Instituto de Ingeniería del Conocimiento (IIC)**, construida a partir de una arquitectura robusta:
+ * **Linaje:** Basado en **RigoBERTa-2.0**, que a su vez integra las capacidades de **BETO, BERT y Legal BERT**.
+ * **Especialización:** Al igual que sus modelos base, es un sistema monolingüe diseñado para el español, pero con un *fine-tuning* específico que le permite comprender la terminología y estructura del sistema jurídico mexicano. 
+* Utiliza BERT (multilingüe), reconocido como uno de los modelos más eficaces en el ecosistema actual de NLP.
+### Arquitectura de Datos y Operaciones
+El sistema garantiza un ciclo de vida de alto nivel mediante una infraestructura moderna:
+ * **Ingesta Masiva:** Automatiza la recopilación de corpus legales desde fuentes oficiales como la **Suprema Corte de Justicia de la Nación (SCJN)** y la **Biblioteca Jurídica de la UNAM**.
+ * **Gestión de Datos:** Utiliza una arquitectura **Lakehouse** estructurada en capas de calidad (Bronze, Silver, Gold).
+ * **Gestión de ML:** Implementa un stack sólido de **MLOps** para el despliegue y monitoreo constante del modelo.
+### Visión y Proyección
+El objetivo principal de BETO Legal México es robustecer el desarrollo de modelos en español, mejorando significativamente los resultados en tareas complejas de lenguaje.
+ * **Evolución:** La hoja de ruta contempla la integración de **GPT con un sistema RAG** (Retrieval-Augmented Generation) cargado con documentos legales. Esto permitirá mejorar drásticamente la redacción automatizada de sentencias y oficios.
+
+El proyecto busca servir como hoja de ruta para que otros países latinoamericanos puedan "tropicalizar" modelos de NLP a sus propias necesidades jurídicas, fomentando la soberanía tecnológica en la región.
+
+
 
 ---
 
@@ -120,5 +136,13 @@ graph TD
 Desarrollado como un ecosistema avanzado de procesamiento de datos públicos y adaptaciones analíticas.
  * **Autor:** Mireles Alcántara Abraham Apolinar
  * **Institución Referencial:** FCPyS - UNAM
-```
+## Bibliografía 
+Por rigor académico, es necesario incluir citas en APA de los papers consultados y reconociendo la labor de los siguientes autores:
+### Modelos:
+- Instituto de Ingeniería del Conocimiento. (2025). _RigoBERTa-2.0_ [Modelo de lenguaje]. Hugging Face. https://doi.org/10.57967/hf/7048 
+-
+### Papers
+- Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. En _Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)_ (pp. 4171–4186). Association for Computational Linguistics.
+
+- Cañete, J., Chaperon, G., Fuentes, R., Ho, J. H., Kang, H., & Pérez, J. (2020). _BETO: Spanish BERT_ [Modelo de lenguaje]. Hugging Face. https://huggingface.co/dccuchile/bert-base-spanish-wwm-uncased 
 
