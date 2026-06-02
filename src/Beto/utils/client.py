@@ -17,7 +17,6 @@ def obtener_cliente_http(es_api=False) -> requests.Session:
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }
 
-    # Ajuste dinámico dependiendo de si vas a scrapear HTML o a consumir un JSON de API
     if es_api:
         headers["Accept"] = "application/json"
     else:
@@ -26,8 +25,5 @@ def obtener_cliente_http(es_api=False) -> requests.Session:
         )
 
     session.headers.update(headers)
-
-    # Opcional: Aquí podrías agregar lógica global de reintentos (Retries)
-    # si un servidor de la SCJN o UNAM se cae momentáneamente.
 
     return session

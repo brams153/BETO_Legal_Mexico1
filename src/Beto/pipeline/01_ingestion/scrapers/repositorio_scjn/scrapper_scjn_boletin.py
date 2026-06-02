@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 class ExtraerBoletinSCJN:
     def __init__(self):
-        # Corregido: Consumimos la sesión con headers de navegador simulado
+        # Se conecta la sesión con headers de navegador simulado
         self.session = obtener_cliente_http(es_api=False)
 
         self.output_dir = BRONZE_DIR / "scjn_boletines"
