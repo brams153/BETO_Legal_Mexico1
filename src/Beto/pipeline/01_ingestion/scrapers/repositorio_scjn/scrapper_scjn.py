@@ -8,7 +8,7 @@ from Beto.utils.client import obtener_cliente_http
 
 class ExtraerSCJN:
     def __init__(self):
-        # Corregido: Inicialización centralizada con formato estricto JSON para APIs
+
         self.session = obtener_cliente_http(es_api=True)
 
         self.output_path = BRONZE_DIR / "scjn"
@@ -84,7 +84,6 @@ class ExtraerSCJN:
             json.dump(self.diccionario_completo, f, ensure_ascii=False, indent=4)
         print(f"💾 JSON guardado en: {ruta_json}")
 
-        # Corregido: Usamos el método nativo de asignación from_dict
         ruta_excel = self.output_path / "scjn_api.xlsx"
         df = pd.DataFrame.from_dict(self.diccionario_completo, orient="index")
         df.to_excel(ruta_excel, index_label="id_scjn")

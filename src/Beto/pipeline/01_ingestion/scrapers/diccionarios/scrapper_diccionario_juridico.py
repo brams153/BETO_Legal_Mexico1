@@ -3,9 +3,7 @@ from Beto.utils.config import PROJECT_ROOT, BRONZE_DIR
 from Beto.utils.client import obtener_cliente_http
 from bs4 import BeautifulSoup
 
-# ==========================================
-# 1. DETECCIÓN DINÁMICA DE RUTAS
-# ==========================================
+
 OUTPUT_DIR = BRONZE_DIR / "diccionarios"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -13,9 +11,6 @@ print(f"📂 Raíz del proyecto: {PROJECT_ROOT}")
 print(f"📂 Guardando descargas en: {OUTPUT_DIR}")
 
 
-# ==========================================
-# 2. LÓGICA DEL SCRAPER (UNAMVacuum)
-# ==========================================
 class UNAMVacuum:
     def __init__(self):
         # Corregido: Consumimos la sesión web desde la utilidad global
