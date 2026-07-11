@@ -17,3 +17,5 @@ env/
 # --- CONFIGURACIONES DE EDITORES ---
 .vscode/
 .idea/
+public/
+.hugo_build.lock
