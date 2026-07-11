@@ -5,19 +5,7 @@ relativeURLs = false
 languageCode = 'es-mx'
 title = 'BETO Legal México'
 theme = 'book'
-
 [params]
 # Configuración básica para el tema Book
 BookSection = 'docs'
 BookTheme = 'light' # o 'dark'
-
-# --- AGREGADO: MONTAJE VIRTUAL DE SOLO LECTURA ---
-[module]
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-  [[module.mounts]]
-    source = "../images" 
-    target = "static/images"
-

@@ -2,7 +2,7 @@ import json
 import time
 import traceback
 import pandas as pd
-from Beto.utils.config import PROJECT_ROOT, BRONZE_DIR
+from Beto.utils.config import BRONZE_DIR
 from Beto.utils.client import obtener_cliente_http
 
 
