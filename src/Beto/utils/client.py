@@ -7,12 +7,10 @@ def obtener_cliente_http(es_api=False) -> requests.Session:
     Fabrica y retorna una sesión de requests configurada de forma centralizada.
     Apaga de forma segura las advertencias de SSL para los sitios de gobierno.
     """
-    # Desactivar advertencias de SSL una sola vez a nivel global
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     session = requests.Session()
 
-    # Cabeceras base comunes para simular un navegador real en Lubuntu
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }

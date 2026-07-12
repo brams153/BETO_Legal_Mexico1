@@ -13,6 +13,9 @@ __pycache__/
 .venv/
 venv/
 env/
+# CACHÉ de Hugo
+.hugo_build.lock
+public/
 
 # --- CONFIGURACIONES DE EDITORES ---
 .vscode/

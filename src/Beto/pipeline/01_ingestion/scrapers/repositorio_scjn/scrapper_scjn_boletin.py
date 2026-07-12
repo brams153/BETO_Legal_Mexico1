@@ -9,7 +9,7 @@ class ExtraerBoletinSCJN:
         # Se conecta la sesión con headers de navegador simulado
         self.session = obtener_cliente_http(es_api=False)
 
-        self.output_dir = BRONZE_DIR / "scjn_boletines"
+        self.output_dir = BRONZE_DIR / "scjn" / "boletines"
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         self.url_base_dominio = "https://www.scjn.gob.mx"
