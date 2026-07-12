@@ -21,31 +21,7 @@ El sistema automatiza la ingesta masiva de corpus desde fuentes clave como la **
 ## 📁 Estructura del Repositorio
 <!-- readme-tree start -->
 <!-- readme-tree end -->
-```text
-.
-├── .github/workflows/          # Pipelines de CI/CD (Staging, Production, Hugo Pages)
-├── deployment/                 # Configuraciones de Infraestructura y Despliegue
-│   ├── airflow/                # DAGs de monitoreo, scraping y entrenamiento
-│   ├── docker/                 # Dockerfiles para API, Workers y Training
-│   ├── kubernetes/             # Manifiestos base de K8s y Charts de Helm
-│   └── terraform/              # Infraestructura como Código para GCP (GKE, GCS, IAM)
-├── docs/                       # Documentación técnica y del sistema
-│   ├── architecture/           # Especificaciones de diseño y diagramas PlantUML
-│   ├── hugo/                   # Portal de documentación estática (Plantilla Book)
-│   ├── model_cards/            # Fichas técnicas de los modelos entrenados (Classifier, NER)
-│   └── runbooks/               # Guías operativas frente a incidentes y despliegues
-├── latex/                      # Plantillas académicas e institucionales (IPH)
-├── monitoring/                 # Configuración de observabilidad (Prometheus & Grafana)
-├── notebooks/                  # Demos, experimentos de dominio y prototipado
-├── scripts/                    # Utilidades de entorno, respaldos y automatizaciones rápidas
-├── src/
-│   └── Beto/                   # Código fuente principal del paquete
-│       ├── pipeline/           # Módulos de Ingesta, Features, Modelado y Monitoreo
-│       └── utils/              # Gestores dinámicos de configuración y preprocesamiento
-├── tests/                      # Pruebas Unitarias, Integración y Performance (Load Tests)
-├── pyproject.toml              # Definición moderna del paquete y dependencias core
-└── requirements.txt            # Congelamiento de dependencias del entorno
-```
+
 ---
 # **Aviso Importante**
 ### Documentación en Hugo 
