@@ -19,7 +19,8 @@ El sistema automatiza la ingesta masiva de corpus desde fuentes clave como la **
 ---
 
 ## 📁 Estructura del Repositorio
-
+<!-- readme-tree start -->
+<!-- readme-tree end -->
 ```text
 .
 ├── .github/workflows/          # Pipelines de CI/CD (Staging, Production, Hugo Pages)
