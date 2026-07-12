@@ -1,0 +1,15 @@
+- name: Readme Tree
+  uses: RavelloH/readme-tree@v1.1.0
+  with:
+    # Show all files and directories(yes or no)
+    showall: # optional, default is yes
+    # Show directory name instead of content(yes or no)
+    showdirectoryname: # optional, default is no
+    # List the change time of the file or directory(yes or no)
+    showchangetime: # optional, default is no
+    # Lists the file or directory size(yes or no)
+    showsize: # optional, default is no
+    # Displays the full relative path of the file(yes or no)
+    showallname: # optional, default is no
+    # Ignore.Git folder(yes or no)
+    ignoregit: # optional, default is yes
