@@ -8,16 +8,14 @@ jobs:
       - uses: actions/checkout@v3
       - name: Tree
         uses: RavelloH/readme-tree@latest
-          with:
-            showdirectoryname='yes'
+        with:
+          showall: 'no' # Oculta archivos/carpetas que empiezan con punto (.)
+          showdirectoryname: 'yes' # El parámetro que ya tenías corregido
       - name: commit
         continue-on-error: True
         run: |
-          git init
-          git pull
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions"
           git add .
-          git commit -m "[Readme-Tree]`date '+%Y-%m-%d %H:%M:%S'`" || exit
-          git status
-          git push -f
+          git commit -m "[Readme-Tree] $(date '+%Y-%m-%d %H:%M:%S')" || exit
+          git push origin HEAD
