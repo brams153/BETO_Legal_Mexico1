@@ -1,4 +1,6 @@
 - name: Readme Tree
+  # You may pin to the exact commit or the version.
+  # uses: RavelloH/readme-tree@7e019c5d3de27630776bbad05f1a13b38e8e25c9
   uses: RavelloH/readme-tree@v1.1.0
   with:
     # Show all files and directories(yes or no)
